@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+double calculateTax(double annualSalary) {
+    double tax = 0;
+    if (annualSalary <= 180000) {
+        tax = annualSalary * 0.05;
+    } else if (annualSalary <= 300000) {
+        tax = 180000 * 0.05 + (annualSalary - 180000) * 0.07;
+    } else if (annualSalary <= 500000) {
+        tax = 180000 * 0.05 + 120000 * 0.07 + (annualSalary - 300000) * 0.10;
+    } else if (annualSalary <= 750000) {
+        tax = 180000 * 0.05 + 120000 * 0.07 + 200000 * 0.10 + (annualSalary - 500000) * 0.12;
+    } else {
+        tax = 180000 * 0.05 + 120000 * 0.07 + 200000 * 0.10 + 250000 * 0.12 + (annualSalary - 750000) * 0.15;
+    }
+    return tax;
+}
+int main() {
+    double annualSalary;
+    cout << "Enter the annual salary: ";
+    cin >> annualSalary;
+    double tax = calculateTax(annualSalary);
+    cout << "The income tax is: " << tax << endl;
+    return 0;
+}
