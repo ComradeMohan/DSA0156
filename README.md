@@ -11,3 +11,8 @@
   <div style="max-width: 500px; margin-left: 50px;">
 <!--     <P>C++ is a versatile and high-performance programming language developed by Bjarne Stroustrup. It extends the C language with object-oriented features, making it ideal for system/software development and game programming. Known for its efficiency and control over system resources, C++ is widely used in applications requiring high performance.</P> -->
   </div>
+
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/ComradeMohan-DSA0156/count.svg" />
+</p>
